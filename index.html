@@ -283,18 +283,20 @@ I would recommend him to anyone who wants to create lasting memories.
 
 <section id="contact" class="section">
 
-<div class="container">
-
-<h2 class="section-title">Book The Magic Bean</h2>
-
 <div class="contact-form">
 
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email">
-<input type="text" placeholder="Event Type">
-<textarea placeholder="Tell us about your event"></textarea>
+<form action="https://formspree.io/f/xzdyvlgl" method="POST">
 
-<button class="btn">Send Inquiry</button>
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="text" name="event_type" placeholder="Event Type">
+<textarea name="message" placeholder="Tell us about your event" required></textarea>
+
+<input type="hidden" name="_subject" value="New Magic Bean Inquiry">
+
+<button type="submit" class="btn">Send Inquiry</button>
+
+</form>
 
 </div>
 
